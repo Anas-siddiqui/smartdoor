@@ -2,14 +2,15 @@ import sys, json, numpy as np
 import cv2
 import time
 
+#for webcam users
 camera=cv2.VideoCapture(0)
+
+#for picam users
+#import picam
+#camera=picam.OpenCVCapture()
+
+
 face_cascade = cv2.CascadeClassifier('/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml')
-
-
-
-
-
-
 
 
 def main():
